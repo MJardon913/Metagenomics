@@ -8,8 +8,15 @@ $\alpha$-diversity measures the "richness" of taxa within a community. $\beta$-d
 
 ## Load libraries and data for analyses.
 
-~~~
 
+> ## R(version 4.1.3)
+>~~~
+>
+>
+>
+>~~~
+
+~~~
 >library(vegan)
 >library(ggplot2)
 >library(phyloseq)
