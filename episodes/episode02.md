@@ -12,7 +12,7 @@ library(phyloseq)
 
 SRR121928_metagenomes <- import_biom('bracken_shaday/SRR121928.biom')
 
-## Cálculo de la diversidad-\alpha
+## Cálculo de la diversidad-$\alpha$
 
 ##calcular índice de shannon
 
