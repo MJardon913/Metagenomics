@@ -1,4 +1,4 @@
-##librerías necesarias
+## ibrerías necesarias
 
 
 library(vegan)
