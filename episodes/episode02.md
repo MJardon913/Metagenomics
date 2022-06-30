@@ -1,18 +1,34 @@
-## Carga de librerías y datos 
+---
+title: $\alpha$ and $\beta$ diversity analysis in R.
+
+---
+
+$\alpha$-diversity measures the "richness" of taxa within a community. $\beta$-diversity on the other hand measures how different the comunities are in their richness. These analyses will be performed on the 5 samples of maize rhizosphere of the project BioProject:PRJNA645385. 
 
 
-librerías necesarias
+## Load libraries and data for analyses.
 
+~~~
 
 library(vegan)
 library(ggplot2)
 library(phyloseq)
+~~~
+{: .language-r}
+
 
 ##cargar bioms como variable
 
-SRR121928_metagenomes <- import_biom('bracken_shaday/SRR121928.biom')
+SRR121928_metagenomes <- import_biom('Metagenomics/Data/bracken_biom/SRR121928_bracken.biom')
+
 
 ## Cálculo de la diversidad-$\alpha$
+
+
+plot_richness(physeq = SRR121928_metagenomes, 
+              measures = "Shannon") 
+
+
 
 ##calcular índice de shannon
 
@@ -36,4 +52,3 @@ pcoa_bc = ordinate(SRR121928_metagenomes, "PCoA", "bray")
 
 plot_ordination(SRR121928_metagenomes, pcoa_bc, color = "site") + 
   geom_point(size = 3)
-
