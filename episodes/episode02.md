@@ -12,7 +12,7 @@ library(phyloseq)
 
 SRR121928_metagenomes <- import_biom('bracken_shaday/SRR121928.biom')
 
-## Cálculo de la diversidad-\alpha
+## Cálculo de la diversidad-$\alpha$
 
 ##calcular índice de shannon
 
@@ -23,7 +23,9 @@ shan_indexSRR12192848 <- diversity(SRR121928_metagenomes@otu_table@.Data[,'SRR12
 evennessSRR12192848 <- shan_indexSRR12192848/log(specnumber(SRR121928_metagenomes@otu_table@.Data[,'SRR12192848_bracken_species']))
 
 
-##PCoA
+## Cálculo de diversidad-$\beta$
+
+PCoA
 
 data_otu_SRR121928 <- data.frame(otu_table(SRR121928_metagenomes))
 
