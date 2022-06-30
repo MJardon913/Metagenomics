@@ -18,8 +18,29 @@ And in this case the galaxy [iNAP](https:// mem.rcees.ac.cn:8081) online platfor
 
 ### Upload information to iNAP
 
-	The files mentioned above are uploaded in Data for iNAP, in the upload data section.
+The files mentioned above are uploaded in Data for iNAP, in the upload data section.
+This is the iNAP tutorial [video](https://www.youtube.com/watch?v=lCb-Nsp5bwM) with test data 
 
 #### Method 1: SparCC
 
 #### *Majority selection*.  
+On the left side, Majority selection is selected
+Section:
+-Microbial data; **bac_16S_test.txt**
+-Number of species groupo for network analysis; two groups of species
+-Plant table (2nd Group); **plant_test.txt**
+
+the other options are left as default.
+
+**EXECUTE**
+
+Result:Filtered_OTU_table
+
+#### *SparCC correlation and p-value calculation*
+Section:
+-Input table for SparCC pseudo p-value calculation:Filtered_OTU_table  
+*the other options are left as default.*
+
+Note: This process is the most time consuming computation required. 
+**EXECUTE**
+
