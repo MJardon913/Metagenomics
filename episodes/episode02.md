@@ -14,7 +14,7 @@ $\alpha$-diversity measures the "richness" of taxa within a community. $\beta$-d
 >library(ggplot2)
 >library(phyloseq)
 ~~~
-{: .language-r}
+{: .output}
 
 
 ##cargar bioms como variable
