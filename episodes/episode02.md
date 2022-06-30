@@ -1,4 +1,7 @@
-## ibrerías necesarias
+## Carga de librerías y datos 
+
+
+librerías necesarias
 
 
 library(vegan)
@@ -8,6 +11,8 @@ library(phyloseq)
 ##cargar bioms como variable
 
 SRR121928_metagenomes <- import_biom('bracken_shaday/SRR121928.biom')
+
+## Cálculo de la diversidad-\alpha
 
 ##calcular índice de shannon
 
