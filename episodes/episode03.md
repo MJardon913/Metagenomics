@@ -25,6 +25,7 @@ This is the iNAP tutorial [video](https://www.youtube.com/watch?v=lCb-Nsp5bwM) w
 
 #### *Majority selection*.  
 On the left side, Majority selection is selected
+
 Section:
 
 -Microbial data; **bac_16S_test.txt**
@@ -48,6 +49,7 @@ Section:
 *the other options are left as default.*
 
 Note: This process is the most time consuming computation required. 
+
 **EXECUTE**
 
 
