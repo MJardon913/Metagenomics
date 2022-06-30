@@ -10,9 +10,9 @@ $\alpha$-diversity measures the "richness" of taxa within a community. $\beta$-d
 
 ~~~
 
-library(vegan)
-library(ggplot2)
-library(phyloseq)
+>library(vegan)
+>library(ggplot2)
+>library(phyloseq)
 ~~~
 {: .language-r}
 
