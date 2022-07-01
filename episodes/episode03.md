@@ -59,7 +59,7 @@ Section:
 
 >-SparCC correlation matrix:**SparCC correlation for each pairwise**.
 >
->-Threshold value to filter the SparCC result:0.2
+>-Threshold value to filter the SparCC result:**0.2**
 >
 >-SparCC pseudo p value matrix after permutation:**SparCC pseudo two_sided side p-value**
 
@@ -79,12 +79,23 @@ Section:
 >
 >-Plant table:**plant_test.txt**.
 >
->-Number of subsamples for StARS:10
+>-Number of subsamples for StARS:**10**
 
 *the other options are left as default.*
 
 **NOTE:** Sparse InversE Covariance estimation for Ecological Association and Statistical Inference. Please see more in
 
-```bash
-echo "hola"
-```
+#### *2.2 Generate networks from Spiec-Easi*. Network matrix and output for visualization from Spiec-Easi.
+
+Section:
+>-SpiecEasi matrix:**SpiecEasi matrix**.
+>
+>-Visualization approach for this network analysis:**Gephi**
+
+*the other options are left as default.*
+
+**NOTE:** This step will generate three output files, including bipartite network matrix, visualization input (for Cytoscape or Gephi) and associated edge attributes if needed
+
+### Method 3: eLSA.
+
+#### *3.1 Majority selection*. Manually filtration the input table by removing the lower detected OTUs or species
