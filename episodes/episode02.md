@@ -65,12 +65,7 @@ For $\alpha$-diversity analysis phyloseq can use several diversity measures such
 
 ## $\beta$-diversity analysis
 
-PCoA
-~~~
-> data_otu_SRR121928 <- data.frame(otu_table(SRR121928_metagenomes))
-
-> dist_bc_SRR121928 <- as.matrix(vegdist(data_otu_SRR121928, method = "bray"))
-~~~
+For $\beta$-diversity analysis a PCoA (Principal Coordinate Analysis) will be carried out. This analysis represents our samples in a two-dimensional space from a matrix of pairwise dinstance matrix. In this case Bray-Curtis dissimilarity is used. 
 
 ~~~
 > pcoa_bc = ordinate(SRR121928_metagenomes, "PCoA", "bray")
