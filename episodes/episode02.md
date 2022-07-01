@@ -1,4 +1,4 @@
-# $\alpha$ and $\beta$ diversity analysis in R.
+# $\alpha$ and $\beta$ diversity analyses in R.
 
 $\alpha$-diversity measures the "richness" of taxa within a community. $\beta$-diversity on the other hand measures how different the comunities are in their richness. These analyses will be performed on 5 samples of maize rhizosphere of the project BioProject:PRJNA645385. 
 
@@ -24,13 +24,30 @@ BiocManager::install("phyloseq") #tool to import, analyze, phylogenetic sequenci
 ~~~
 {: .r-language}
 
-Load .biom file obtained from bracken reports of the 5 samples. [Bracken](http://ccb.jhu.edu/software/bracken/index.shtml) reports were obtained by applying Bracken (Bayesian Reestimation of Abundance with KrakEN), a statistical method that computes the abundance of species, from kraken reports.
+Load .biom file obtained from bracken reports of the 5 samples. Bracken reports were obtained by applying [Bracken](http://ccb.jhu.edu/software/bracken/index.shtml) (Bayesian Reestimation of Abundance with KrakEN), a statistical method that computes the abundance of species from kraken reports.
 
 ~~~
 > SRR121928_metagenomes <- import_biom('~/Metagenomics/Data/bracken_biom/SRR121928_bracken.biom')
 ~~~
 
+The variable thus loaded is a phyloseq-class object with an OTU_table and a Tax_table. 
+
+~~~
+> SRR_metagenomes
+~~~
+{: .r-language}
+
+~~~
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 87 taxa and 3 samples ]
+tax_table()   Taxonomy Table:    [ 87 taxa by 7 taxonomic ranks ]
+~~~
+{: .output}
+
+
 ## $\alpha$-diversity analysis
+
+For $\alpha$-diversity analysis phyloseq can use several diversity measures such as Shannon Index, Simpson's and Chao1. Here we make the analysis with the Shannon Index. 
 
 ~~~
 > plot_richness(physeq = SRR121928_metagenomes, 
@@ -39,7 +56,8 @@ Load .biom file obtained from bracken reports of the 5 samples. [Bracken](http:/
 
 
 <a href="../Images/alpha.analysis.png">
-  <img src="../Images/alpha-analysis.png" alt="" />
+  <img src="../Images/alpha-analysis.png" width="435" height="631" alt="Shannon indices of our 5 samples" />
+ 
 </a>
 
 
