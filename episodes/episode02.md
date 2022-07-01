@@ -24,7 +24,7 @@ BiocManager::install("phyloseq") #tool to import, analyze, phylogenetic sequenci
 ~~~
 {: .r-language}
 
-Load .biom file obtained from bracken reports of the 5 samples. [Bracken] (http://ccb.jhu.edu/software/bracken/index.shtml) reports were obtained by applying Bracken (Bayesian Reestimation of Abundance with KrakEN), a statistical method that computes the abundance of species, from kraken reports.
+Load .biom file obtained from bracken reports of the 5 samples. [Bracken](http://ccb.jhu.edu/software/bracken/index.shtml) reports were obtained by applying Bracken (Bayesian Reestimation of Abundance with KrakEN), a statistical method that computes the abundance of species, from kraken reports.
 
 ~~~
 > SRR121928_metagenomes <- import_biom('~/Metagenomics/Data/bracken_biom/SRR121928_bracken.biom')
