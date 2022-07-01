@@ -33,14 +33,14 @@ Load .biom file obtained from bracken reports of the 5 samples. Bracken reports 
 The variable thus loaded is a phyloseq-class object with an OTU_table and a Tax_table. 
 
 ~~~
-> SRR_metagenomes
+> SRR121928_metagenomes
 ~~~
 {: .r-language}
 
 ~~~
 phyloseq-class experiment-level object
-otu_table()   OTU Table:         [ 87 taxa and 3 samples ]
-tax_table()   Taxonomy Table:    [ 87 taxa by 7 taxonomic ranks ]
+otu_table()   OTU Table:         [ 5878 taxa and 5 samples ]
+tax_table()   Taxonomy Table:    [ 5878 taxa by 7 taxonomic ranks ]
 ~~~
 {: .output}
 
