@@ -41,7 +41,9 @@ Load .biom file obtained from bracken reports of the 5 samples. Bracken reports 
 ~~~
 
 
-
+<a href="../Images/alpha.analysis.png">
+  <img src="../Images/alpha-analysis.png" alt="" />
+</a>
 
 
 
@@ -61,3 +63,8 @@ PCoA
 > plot_ordination(SRR121928_metagenomes, pcoa_bc, color = "site") + 
   geom_point(size = 3)
 ~~~
+
+
+<a href="../Images/beta.analysis.png">
+  <img src="../Images/beta-analysis.png" alt="" />
+</a>
