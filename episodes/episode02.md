@@ -56,7 +56,7 @@ For $\alpha$-diversity analysis phyloseq can use several diversity measures such
 
 
 <a href="../Images/alpha.analysis.png">
-  <img src="../Images/alpha-analysis.png" alt="Shannon indices of our 5 samples" />
+  <img src="../Images/alpha-analysis.png" width="435" height="435" alt="Shannon indices of our 5 samples" />
  
 </a>
 
