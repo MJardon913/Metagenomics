@@ -1,7 +1,4 @@
----
-title: $\alpha$ and $\beta$ diversity analysis in R.
-
----
+# $\alpha$ and $\beta$ diversity analysis in R.
 
 $\alpha$-diversity measures the "richness" of taxa within a community. $\beta$-diversity on the other hand measures how different the comunities are in their richness. These analyses will be performed on 5 samples of maize rhizosphere of the project BioProject:PRJNA645385. 
 
@@ -27,7 +24,7 @@ BiocManager::install("phyloseq") #tool to import, analyze, phylogenetic sequenci
 ~~~
 {: .r-language}
 
-Load .biom file obtained from bracken reports of the 5 samples. Bracken reports were obtained by applying Bracken (Bayesian Reestimation of Abundance with KrakEN), a statistical method that computes the abundance of species, from kraken reports.
+Load .biom file obtained from bracken reports of the 5 samples. [Bracken] [http://ccb.jhu.edu/software/bracken/index.shtml] reports were obtained by applying Bracken (Bayesian Reestimation of Abundance with KrakEN), a statistical method that computes the abundance of species, from kraken reports.
 
 ~~~
 > SRR121928_metagenomes <- import_biom('~/Metagenomics/Data/bracken_biom/SRR121928_bracken.biom')
@@ -68,3 +65,6 @@ PCoA
 <a href="../Images/beta.analysis.png">
   <img src="../Images/beta-analysis.png" alt="" />
 </a>
+
+## References
+
